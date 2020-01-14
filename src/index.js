@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://bootweb:1Df8NHr65sEDmGsS@cluster0-06ien.mongodb.net/test?retryWrites=true&w=majority',{
+mongoose.connect("url",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex:true,
