@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
+// conexão mongo atlas https://www.mongodb.com/
 mongoose.connect("url",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
