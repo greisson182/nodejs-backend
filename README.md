@@ -1,1 +1,1 @@
-# NodeJS RestFull Api
+# NodeJS RESTful Api
