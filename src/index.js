@@ -10,7 +10,8 @@ const server = http.Server(app);
 
 setupWebsocket(server);
 
-mongoose.connect('mongodb+srv://bootweb:1Df8NHr65sEDmGsS@cluster0-06ien.mongodb.net/test?retryWrites=true&w=majority',{
+// conexão mongo atlas https://www.mongodb.com/
+mongoose.connect("url",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex:true,
