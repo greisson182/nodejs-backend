@@ -11,7 +11,7 @@ const server = http.Server(app);
 setupWebsocket(server);
 
 // conexão mongo atlas https://www.mongodb.com/
-mongoose.connect("url",{
+mongoose.connect('mongodb+srv://bootweb:1Df8NHr65sEDmGsS@cluster0-06ien.mongodb.net/test?retryWrites=true&w=majority',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex:true,
@@ -21,8 +21,8 @@ app.use(express.json());
 app.use(cors());
 app.use(routes);
 
-const POST = process.env.PORT || 3333
+const PORT = process.env.PORT || 3333
 
-server.listen(POST, () => {
+server.listen(PORT, () => {
     console.log('Server Roanding.')
 });
