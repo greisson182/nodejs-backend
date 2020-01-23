@@ -15,6 +15,16 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node app.js"
-  }
+    "start": "node src/index.js"
+  },
+  "description": "Projeto api RESTful utilizando mongodb com api com github",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greisson182/nodejs-backend.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/greisson182/nodejs-backend/issues"
+  },
+  "homepage": "https://github.com/greisson182/nodejs-backend#readme"
 }
