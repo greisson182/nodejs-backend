@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const http = require('http');
@@ -11,7 +13,7 @@ const server = http.Server(app);
 setupWebsocket(server);
 
 // conexão mongo atlas https://www.mongodb.com/
-mongoose.connect('mongodb+srv://bootweb:1Df8NHr65sEDmGsS@cluster0-06ien.mongodb.net/test?retryWrites=true&w=majority',{
+mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex:true,
