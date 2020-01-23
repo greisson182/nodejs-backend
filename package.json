@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
+    "start": "node src/index.js"
   },
   "description": "Projeto api RESTful utilizando mongodb com api com github",
   "repository": {
